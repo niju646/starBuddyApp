@@ -38,7 +38,7 @@ class Second extends StatelessWidget {
             right: 0,
             child: Center(
               child: Container(
-                child:Text("Discover the mysteries of the universe.\n Explore the stars, planets, and galaxies\n beyond imagination. Join us on a journey through the cosmos!",
+                child:Text("Discover the mysteries of the universe.\n Explore the stars, planets, and galaxies\n beyond imagination. Join us on a journey through cosmos!",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white),
                 
@@ -68,6 +68,14 @@ class Second extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 15),
               decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 10,
+                    offset: Offset(4, 4)
+                  )
+                ],
                 color:isSelected? Colors.blueGrey[800]:Colors.blueGrey[700],
                 borderRadius: BorderRadius.circular(20),
               ),
