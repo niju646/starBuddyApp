@@ -25,13 +25,13 @@ class Second extends StatelessWidget {
               child: Container(
                 child: Text(
                   "Star Buddy",style: TextStyle(
-                    color: const Color.fromARGB(255, 184, 15, 3),fontSize: 40,
+                    color: const Color.fromARGB(255, 165, 14, 3),fontSize: 40,
                     fontFamily: 'EmblemaOne',fontWeight: FontWeight.bold,
                     shadows: [
                     Shadow(
-                      color: Colors.black.withOpacity(0.7), // Shadow color
-                      blurRadius: 5, // Blur effect for smoothness
-                      offset: Offset(3, 3), // Shadow position (X, Y)
+                      color: Colors.black.withOpacity(0.7), 
+                      blurRadius: 5, 
+                      offset: Offset(3, 3),
                     ),
                   ],
                     ),
@@ -51,9 +51,9 @@ class Second extends StatelessWidget {
                 style: TextStyle(color: Colors.white,
                 shadows: [
                     Shadow(
-                      color: Colors.black.withOpacity(0.7), // Shadow color
-                      blurRadius: 5, // Blur effect for smoothness
-                      offset: Offset(3, 3), // Shadow position (X, Y)
+                      color: Colors.black.withOpacity(0.7), 
+                      blurRadius: 5, 
+                      offset: Offset(3, 3), 
                     ),
                   ],
                 ),
@@ -96,7 +96,7 @@ class Second extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Center(child: Text("Lets Explore",style: TextStyle(
-                color:isSelected? Colors.red:Colors.white,fontSize: 20
+                color:isSelected? const Color.fromARGB(255, 194, 49, 39):Colors.white,fontSize: 20
               ),)),
             ),
           ),
