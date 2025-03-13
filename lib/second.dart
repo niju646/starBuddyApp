@@ -19,7 +19,7 @@ class Second extends StatelessWidget {
           Positioned(
             left: 0,
             right: 0,
-            top: 200,
+            top: 300,
             
             child: Center(
               child: Container(
@@ -33,7 +33,7 @@ class Second extends StatelessWidget {
             
           ),
           Positioned(
-            top: 300,
+            top: 400,
             left: 0,
             right: 0,
             child: Center(
@@ -55,7 +55,7 @@ class Second extends StatelessWidget {
 
   Positioned buttonStart(BuildContext context,{bool isSelected = false} ) {
     return Positioned(
-          top: 500,
+          top: 700,
           left: 50,
           right: 50,
           child: GestureDetector(
