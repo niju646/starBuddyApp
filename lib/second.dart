@@ -25,8 +25,16 @@ class Second extends StatelessWidget {
               child: Container(
                 child: Text(
                   "Star Buddy",style: TextStyle(
-                    color: Colors.white,fontSize: 40,
-                    fontFamily: 'EmblemaOne',fontWeight: FontWeight.bold),
+                    color: const Color.fromARGB(255, 184, 15, 3),fontSize: 40,
+                    fontFamily: 'EmblemaOne',fontWeight: FontWeight.bold,
+                    shadows: [
+                    Shadow(
+                      color: Colors.black.withOpacity(0.7), // Shadow color
+                      blurRadius: 5, // Blur effect for smoothness
+                      offset: Offset(3, 3), // Shadow position (X, Y)
+                    ),
+                  ],
+                    ),
                     ),
               ),
             ),
@@ -40,7 +48,15 @@ class Second extends StatelessWidget {
               child: Container(
                 child:Text("Discover the mysteries of the universe.\n Explore the stars, planets, and galaxies\n beyond imagination. Join us on a journey through cosmos!",
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white,
+                shadows: [
+                    Shadow(
+                      color: Colors.black.withOpacity(0.7), // Shadow color
+                      blurRadius: 5, // Blur effect for smoothness
+                      offset: Offset(3, 3), // Shadow position (X, Y)
+                    ),
+                  ],
+                ),
                 
                 )
                  ),
