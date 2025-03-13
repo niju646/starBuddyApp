@@ -26,7 +26,7 @@ class Second extends StatelessWidget {
                 child: Text(
                   "Star Buddy",style: TextStyle(
                     color: Colors.white,fontSize: 40,
-                    fontStyle: FontStyle.italic,fontWeight: FontWeight.bold),
+                    fontFamily: 'EmblemaOne',fontWeight: FontWeight.bold),
                     ),
               ),
             ),
@@ -53,7 +53,7 @@ class Second extends StatelessWidget {
     );
   }
 
-  Positioned buttonStart(BuildContext context,{isSelected = false} ) {
+  Positioned buttonStart(BuildContext context,{bool isSelected = false} ) {
     return Positioned(
           top: 500,
           left: 50,
@@ -62,7 +62,7 @@ class Second extends StatelessWidget {
             onTap: (){
               print("lets start");
               Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                return Explore();
+                return  Explore();
               }));
             },
             child: Container(
