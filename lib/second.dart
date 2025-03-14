@@ -25,7 +25,7 @@ class Second extends StatelessWidget {
               child: Container(
                 child: Text(
                   "Star Buddy",style: TextStyle(
-                    color: const Color.fromARGB(255, 165, 14, 3),fontSize: 40,
+                    color: Colors.white,fontSize: 40,
                     fontFamily: 'EmblemaOne',fontWeight: FontWeight.bold,
                     shadows: [
                     Shadow(
